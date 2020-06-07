@@ -35,6 +35,7 @@ public class PViewbyID extends HttpServlet {
     {
         String idtmp = request.getParameter("project_id");
         int project_id = Integer.parseInt(idtmp);
+        request.setAttribute("GetR", Datacontroller.getAllResearcher());
         request.setAttribute("getAllProjectbyID", Datacontroller.getAllProjectbyID(project_id));
         RequestDispatcher rd = request.getRequestDispatcher("EditProject.jsp");
         try {

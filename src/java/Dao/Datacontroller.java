@@ -70,7 +70,7 @@ public class Datacontroller {
         List<ProjectR> pls = new LinkedList<>();
         
         try {
-            ResultSet rs = Dbconnect.getps("SELECT * FROM project LEFT JOIN researcher ON researcher.ID=project.rID").executeQuery();
+            ResultSet rs = Dbconnect.getps("SELECT * FROM project LEFT JOIN researcher ON researcher.ID=project.rId").executeQuery();
             while(rs.next()){
                 ProjectR projectR = new ProjectR();
                 projectR.setProject_id(rs.getInt("project_id"));
@@ -78,6 +78,7 @@ public class Datacontroller {
                 projectR.setPlocation(rs.getString("plocation"));
                 projectR.setDocument(rs.getString("document"));
                 projectR.setName(rs.getString("name"));
+                projectR.setrId(rs.getInt("rId"));
                 projectR.setProject_period(rs.getInt("project_period"));
                 pls.add(projectR);
             }
@@ -91,7 +92,7 @@ public class Datacontroller {
         List<ProjectR> pls = new LinkedList<>();
         
         try {
-            ResultSet rs = Dbconnect.getps("SELECT * FROM project LEFT JOIN researcher ON researcher.ID=project.rID WHERE project_id="+pid).executeQuery();
+            ResultSet rs = Dbconnect.getps("SELECT * FROM project LEFT JOIN researcher ON researcher.ID=project.rId WHERE project_id="+pid).executeQuery();
             while(rs.next()){
                 ProjectR projectR = new ProjectR();
                 projectR.setProject_id(rs.getInt("project_id"));
@@ -123,8 +124,9 @@ public class Datacontroller {
         return pls;
     }
     
-    public void projectEdit(int project_id, String project_name, int project_period, String plocation, String document, int rId){
-        String sql = "UPDATE project set project_name = ?, project_period=?, plocation=?,document=?,rId=?"+ "WHERE project_id=?";
+    public void projectEdit(int project_id, String project_name, int project_period, String plocation, String document){
+        String sql = "UPDATE project set project_name=?, project_period=?, plocation=?,document=?,rId=?" + "WHERE project_id=?";
+       
         PreparedStatement ps;
         try {
             ps = Dbconnect.getps(sql);
@@ -132,13 +134,15 @@ public class Datacontroller {
             ps.setInt(2, project_period);
             ps.setString(3,plocation);
             ps.setString(4, document);
-            ps.setInt(5, rId);
-            ps.setInt(6, project_id);
+        
+            ps.setInt(5, project_id);
         
             ps.executeUpdate();
             
+            
         } catch (ClassNotFoundException | SQLException ex) {
             Logger.getLogger(Datacontroller.class.getName()).log(Level.SEVERE, null, ex);
+            System.out.print("apabenda"+ex);
         }
        
         
@@ -407,7 +411,7 @@ public class Datacontroller {
     ///////////////////////////////////////////////////////Member section here///////////////////////////////////////////////////////
     public void addMember(Member member){
         try {
-            PreparedStatement ps = Dbconnect.getps("INSERT INTO member(membername,institute,phoneNo,email,phoneNo,projectid) VALUES(?,?,?,?,?)");
+            PreparedStatement ps = Dbconnect.getps("INSERT INTO member(membername,institute,phoneNo,email,projectid) VALUES(?,?,?,?,?)");
             ps.setString(1,member.getMembername());
             ps.setString(2,member.getInstitute());
             ps.setString(3,member.getPhoneNo());

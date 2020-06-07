@@ -38,9 +38,10 @@
         <div class="container">
             <jsp:include page="/menu.jsp"/>
             <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="#">Fish</a></li>
-                <li class="breadcrumb-item active">Fish List</li>
+                <li class="breadcrumb-item"><a href="#">Project</a></li>
+                <li class="breadcrumb-item active">Project List</li>
             </ol>
+             <a href="/FormWisV2/projectAdd" class="btn btn-primary">Add new project</a>
             <div class="row">
                 <div class="col-md-12 p-3">
 

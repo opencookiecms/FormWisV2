@@ -56,7 +56,7 @@
                                 <div class="col-md-12">
                                      <div class="form-group">
                                         <label>Project Period</label>
-                                        <input type="number" value="${p.project_period}" class="form-control" name="project_period" aria-describedby="emailHelp" placeholder="Your Email Address">
+                                        <input type="number" value="${p.project_period}" class="form-control" name="project_period">
                                         <small id="emailHelp" class="form-text text-muted">Please insert your email address.</small>
                                     </div>
                                 </div>
@@ -71,6 +71,20 @@
                                     </div>
                                 </div>
                              </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label>Belong to:</label>
+                                             <select id="researcher" name="rId" class="form-control">
+                                                <option value="${p.rId}">---</option>
+                                               <pi:forEach items="${GetR}" var="p">
+                                                <option value="${p.ID}">${p.name}</option>
+                                               </pi:forEach>
+                                             </select>                          
+                                            <small id="emailHelp" class="form-text text-muted">This project belong to ?.</small>
+                                        </div>
+                                    </div>
+                                </div>
                             <div class="row">
                                   <div class="col-md-6">
                                 <div class="form-group">

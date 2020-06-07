@@ -41,6 +41,7 @@
                 <li class="breadcrumb-item"><a href="#">Fish</a></li>
                 <li class="breadcrumb-item active">Fish List</li>
             </ol>
+            <a href="/FormWisV2/AddFish" class="btn btn-primary">Add new fish</a>
             <div class="row">
                 <div class="col-md-12 p-3">
 

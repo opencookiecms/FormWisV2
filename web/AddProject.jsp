@@ -44,8 +44,8 @@
                                 <div class="col-md-12">
                                      <div class="form-group">
                                         <label>Project Name</label>
-                                        <input type="text" class="form-control" name="project_name" aria-describedby="emailHelp" placeholder="Your Name">
-                                        <small id="emailHelp" class="form-text text-muted">Please insert your name.</small>
+                                        <input type="text" class="form-control" name="project_name" aria-describedby="emailHelp" placeholder="Project Name">
+                                        <small id="emailHelp" class="form-text text-muted">Please the project name.</small>
                                     </div>
                                 </div>
                             </div>
@@ -53,8 +53,8 @@
                                 <div class="col-md-12">
                                      <div class="form-group">
                                         <label>Project Period</label>
-                                        <input type="number" class="form-control" name="project_period" aria-describedby="emailHelp" placeholder="Your Email Address">
-                                        <small id="emailHelp" class="form-text text-muted">Please insert your email address.</small>
+                                        <input type="number" class="form-control" name="project_period" aria-describedby="emailHelp" placeholder="Project period">
+                                        <small id="emailHelp" class="form-text text-muted">Please insert day period.</small>
                                     </div>
                                 </div>
                             </div>
@@ -63,8 +63,8 @@
                                 <div class="col-md-12">
                                      <div class="form-group">
                                         <label>Project Location</label>
-                                        <input type="text" class="form-control" name="plocation" aria-describedby="emailHelp" placeholder="Your Email Address">
-                                        <small id="emailHelp" class="form-text text-muted">Please insert your email address.</small>
+                                        <input type="text" class="form-control" name="plocation" aria-describedby="emailHelp" placeholder="Location">
+                                        <small id="emailHelp" class="form-text text-muted">Please insert the location.</small>
                                     </div>
                                 </div>
                              </div>
@@ -87,21 +87,19 @@
                                                 <option value="${p.ID}">${p.name}</option>
                                                </rl:forEach>
                                              </select>                          
-                                            <small id="emailHelp" class="form-text text-muted">Please insert fish common name.</small>
+                                            <small id="emailHelp" class="form-text text-muted">This project belong to ?.</small>
                                         </div>
                                     </div>
                                 </div>
                             
                             <div class="row">
                                 <div class="col-md-1">
-                                    <button type="submit" name="submit" class="btn btn-success">Register</button>
+                                    <button type="submit" name="submit" class="btn btn-success">Save</button>
                                 </div>
                                 <div class="col-md-1">
                                     <button type="reset" name="reset" class="btn btn-danger">Reset</button>
                                 </div>
-                                <div class="col-md-10">
-                                    <span>Already registered!!</span> <a href="index.html">Login Here</a>
-                                </div>
+                           
                             </div>
                         </div>
                     </div> 

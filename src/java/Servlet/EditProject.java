@@ -26,13 +26,13 @@ import javax.servlet.http.Part;
  */
 @WebServlet(
         name = "EditProject",
-        urlPatterns = { "/EditProject"},
+        urlPatterns = {"/EditProject"},
         loadOnStartup = 1
 )
 
-@MultipartConfig(fileSizeThreshold=1024*1024*2, 
-maxFileSize=1024*1024*10, 
-maxRequestSize=1024*1024*50)
+@MultipartConfig(fileSizeThreshold = 1024 * 1024 * 2,
+        maxFileSize = 1024 * 1024 * 10,
+        maxRequestSize = 1024 * 1024 * 50)
 public class EditProject extends HttpServlet {
 
     @Override
@@ -42,10 +42,13 @@ public class EditProject extends HttpServlet {
         try {
             String idtmp = request.getParameter("project_id");
             int PID = Integer.parseInt(idtmp);
+
             String idtmps = request.getParameter("project_period");
             int project_period = Integer.parseInt(idtmps);
-                 String rtmp = request.getParameter("rID");
-       int rID = Integer.parseInt(rtmp);
+
+            String rtmp = request.getParameter("rId");
+            int rId = Integer.parseInt(rtmp);
+
             String project_name = request.getParameter("project_name");
 
             String plocation = request.getParameter("plocation");
@@ -78,22 +81,32 @@ public class EditProject extends HttpServlet {
                 }
 
                 Datacontroller dc = new Datacontroller();
-                dc.projectEdit(PID, project_name, project_period, plocation, fileName,rID);
-              
-           
+                dc.projectEdit(PID, project_name, project_period, plocation, fileName);
 
                 response.sendRedirect("/FormWisV2/AllProjectList");
+             
+                System.out.print(PID);
+                System.out.print(project_name);
+                System.out.print(project_period);
+                System.out.print(plocation);
+                System.out.print(fileName);
+                System.out.print(rId);
 
             } catch (IOException e) {
                 Datacontroller dc = new Datacontroller();
-                dc.projectEdit(PID, project_name, project_period, plocation, tempdoc,rID);
+                dc.projectEdit(PID, project_name, project_period, plocation, tempdoc);
 
                 response.sendRedirect("/FormWisV2/AllProjectList");
-                 System.out.print("test"+e);
+                System.out.print(PID);
+                System.out.print(project_name);
+                System.out.print(project_period);
+                System.out.print(plocation);
+                System.out.print(tempdoc);
+                System.out.print(rId);
             }
 
         } catch (IOException | ServletException e) {
-            System.out.print("test"+e);
+            System.out.print("test" + e);
         }
 
     }

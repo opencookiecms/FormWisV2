@@ -93,7 +93,7 @@
                                     <div class="col-md-12">
                                         <div class="form-group">
                                             <label>Project Related:</label>
-                                             <select id="researcher" name="researcher" class="form-control">
+                                             <select id="researcher" name="project" class="form-control">
                                                 <option value="">Please assign Project</option>
                                                <rl:forEach items="${GetProject}" var="p">
                                                 <option value="${p.project_id}">${p.project_name}</option>

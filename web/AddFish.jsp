@@ -225,14 +225,12 @@
                                 </div>
                                 <div class="row">
                                     <div class="col-md-1">
-                                        <button type="submit" name="submit" class="btn btn-success">Register</button>
+                                        <button type="submit" name="submit" class="btn btn-success">Save</button>
                                     </div>
                                     <div class="col-md-1">
                                         <button type="reset" name="reset" class="btn btn-danger">Reset</button>
                                     </div>
-                                    <div class="col-md-10">
-                                        <span>Already registered!!</span> <a href="index.html">Login Here</a>
-                                    </div>
+                                 
                                 </div>
                             </div>
                         </div> 

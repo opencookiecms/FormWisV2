@@ -38,13 +38,27 @@
         <div class="container">
             <jsp:include page="/menu.jsp"/>
             <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="#">Fish</a></li>
-                <li class="breadcrumb-item active">Fish List</li>
+                <li class="breadcrumb-item"><a href="#">Profile</a></li>
+                <li class="breadcrumb-item active">My Profile</li>
             </ol>
             <div class="row">
-                <div class="col-md-12 p-3">
+                <div class="col-md-3">
+                    <div class="card text-white bg-secondary mb-3">
+  <div class="card-header">Picture</div>
+  <div class="card-body">
+    
+  </div>
+</div>
 
-
+                </div>
+                <div class="col-md-9">
+                    <div class="card bg-light mb-3">
+  <div class="card-header">Header</div>
+  <div class="card-body">
+    <h4 class="card-title">Light card title</h4>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+  </div>
+</div>
                 </div>
 
             </div>

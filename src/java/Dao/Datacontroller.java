@@ -482,8 +482,10 @@ public class Datacontroller {
             ps = Dbconnect.getps(sql);
             ps.setInt(1, mId);
             ps.executeUpdate();
+              System.out.print("oysfsf"+ps);
         } catch (ClassNotFoundException | SQLException ex) {
             Logger.getLogger(Datacontroller.class.getName()).log(Level.SEVERE, null, ex);
+            System.out.print("oysfsf"+ex);
         }
        
     }
@@ -499,6 +501,7 @@ public class Datacontroller {
                 projectM.setEmail(rs.getString("email"));
                 projectM.setInstitute(rs.getString("institute"));
                 projectM.setPhoneNo(rs.getString("phoneNo"));
+                projectM.setmId(rs.getInt("mId"));
                 pls.add(projectM);
             }
         } catch (ClassNotFoundException | SQLException ex) {

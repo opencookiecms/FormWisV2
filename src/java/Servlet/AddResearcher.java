@@ -68,7 +68,7 @@ public class AddResearcher extends HttpServlet {
             Part filePart = request.getPart("profile_pic");
             
             String photo="";
-            String path="C:\\xampp\\htdocs\\img\\profile";
+            String path="C:\\xampp\\htdocs\\assets\\profileimg";
             
             File file=new File(path);
             file.mkdir();

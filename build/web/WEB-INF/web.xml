@@ -40,6 +40,10 @@
         <servlet-name>FishVbyAR</servlet-name>
         <servlet-class>Servlet.FishVbyAR</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>DeleteMember</servlet-name>
+        <servlet-class>Servlet.DeleteMember</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>DeleteProject</servlet-name>
         <url-pattern>/project_delete</url-pattern>
@@ -79,6 +83,10 @@
     <servlet-mapping>
         <servlet-name>FishVbyAR</servlet-name>
         <url-pattern>/fish_id</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>DeleteMember</servlet-name>
+        <url-pattern>/delete_id</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

@@ -81,11 +81,11 @@
                         <tbody>
                             <pi:forEach items="${getMemberID}" var="s">
                                 <tr>
-                                    <td>${s.membername}</td>
+                                    <td>${s.membername} ${s.mId}</td>
                                     <td>${s.institute}</td>
                                     <td>${s.phoneNo}</td>
                                     <td>${s.email}</td>
-                                    <td>Action</td>
+                                    <td><a class="btn btn-danger" href="delete_id?mId=${s.mId}">Delete</a></td>
 
                                 </tr>
                             </pi:forEach>

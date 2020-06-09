@@ -70,7 +70,7 @@ public class AddFishFish extends HttpServlet {
         String fish_location = request.getParameter("fish_location");
         String researcher = request.getParameter("researcher");
         try{
-   
+           //test add comment        
             Part filePart = request.getPart("fish_pic");
             
             String photo="";

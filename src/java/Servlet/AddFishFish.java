@@ -70,11 +70,12 @@ public class AddFishFish extends HttpServlet {
         String fish_location = request.getParameter("fish_location");
         String researcher = request.getParameter("researcher");
         try{
-   
+           //test add comment        
             Part filePart = request.getPart("fish_pic");
             
             String photo="";
             String path="C:\\xampp\\htdocs\\assets\\img";
+            //String path="C:\\xampp7.4\\htdocs\\assets\\img";
             
             File file=new File(path);
             file.mkdir();

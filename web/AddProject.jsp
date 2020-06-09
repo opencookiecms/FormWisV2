@@ -17,7 +17,7 @@
         <link rel="icon" href="../../favicon.ico">
         <link rel="canonical" href="https://getbootstrap.com/docs/3.4/examples/navbar/">
 
-        <title>dfdf</title>
+        <title>Project Add</title>
 
         <!-- Bootstrap core CSS -->
         <link href="http://localhost/css/bootstrap.css" rel="stylesheet">
@@ -38,14 +38,14 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="card border-primary mb-3">
-                        <div class="card-header">Please fill in you personal information</div>
+                        <div class="card-header">Please fill in the details of the project</div>
                         <div class="card-body">
                             <div class="row">
                                 <div class="col-md-12">
                                      <div class="form-group">
                                         <label>Project Name</label>
                                         <input type="text" class="form-control" name="project_name" aria-describedby="emailHelp" placeholder="Project Name">
-                                        <small id="emailHelp" class="form-text text-muted">Please the project name.</small>
+                                        <small id="emailHelp" class="form-text text-muted">Please insert the project name.</small>
                                     </div>
                                 </div>
                             </div>
@@ -64,7 +64,7 @@
                                      <div class="form-group">
                                         <label>Project Location</label>
                                         <input type="text" class="form-control" name="plocation" aria-describedby="emailHelp" placeholder="Location">
-                                        <small id="emailHelp" class="form-text text-muted">Please insert the location.</small>
+                                        <small id="emailHelp" class="form-text text-muted">Please insert the location of project.</small>
                                     </div>
                                 </div>
                              </div>

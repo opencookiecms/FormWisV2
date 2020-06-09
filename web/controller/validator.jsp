@@ -12,7 +12,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>logon</title>
+        <title>login</title>
     </head>
         <%
             String username = request.getParameter("username");
@@ -27,7 +27,7 @@
                 //out.println("<a href='logout.jsp'>Log out</a>");
                 response.sendRedirect("/FormWisV2/homepage");
             } else {
-                out.println("Invalid password <a href='index.jsp'>try again</a>");
+                out.println("Invalid password <a href='/FormWisV2/index.jsp'>try again</a>");
             }
         %>
     <body>

@@ -45,7 +45,7 @@
 
             <div class="row">
                 <div class="col-md-8">
-                    <h3>Artical</h3>
+                    <h3>Fish Species</h3>
                     <fl:forEach items="${Homepage}" var="f">
                         <div class="card mb-2">
                             <div class="card-body">
@@ -71,13 +71,15 @@
 
 
 
-                                <span class="badge badge-primary badge-pill">${f.count} Specis fish</span>
+                                <span class="badge badge-primary badge-pill">${f.count} Species fish</span>
                             </li>
 
 
                         </fl:forEach>
 
                     </ul>
+                    
+                    
                 </div>
 
             </div>

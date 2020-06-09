@@ -41,7 +41,7 @@ public class EditProject extends HttpServlet {
         response.setContentType("text/html;charset=UTF-8");
         try {
             String idtmp = request.getParameter("project_id");
-            int PID = Integer.parseInt(idtmp);
+            int project_id = Integer.parseInt(idtmp);
 
             String idtmps = request.getParameter("project_period");
             int project_period = Integer.parseInt(idtmps);
@@ -81,11 +81,11 @@ public class EditProject extends HttpServlet {
                 }
 
                 Datacontroller dc = new Datacontroller();
-                dc.projectEdit(PID, project_name, project_period, plocation, fileName);
+                dc.projectEdit(project_id, project_name, project_period, plocation, fileName);
 
                 response.sendRedirect("/FormWisV2/AllProjectList");
              
-                System.out.print(PID);
+                System.out.print(project_id);
                 System.out.print(project_name);
                 System.out.print(project_period);
                 System.out.print(plocation);
@@ -94,10 +94,10 @@ public class EditProject extends HttpServlet {
 
             } catch (IOException e) {
                 Datacontroller dc = new Datacontroller();
-                dc.projectEdit(PID, project_name, project_period, plocation, tempdoc);
+                dc.projectEdit(project_id, project_name, project_period, plocation, tempdoc);
 
                 response.sendRedirect("/FormWisV2/AllProjectList");
-                System.out.print(PID);
+                System.out.print(project_id);
                 System.out.print(project_name);
                 System.out.print(project_period);
                 System.out.print(plocation);

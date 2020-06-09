@@ -18,7 +18,7 @@
         <link rel="icon" href="../../favicon.ico">
         <link rel="canonical" href="https://getbootstrap.com/docs/3.4/examples/navbar/">
 
-        <title>Navbar Template for Bootstrap</title>
+        <title>Add Fish</title>
 
         <!-- Bootstrap core CSS -->
         <link href="http://localhost/css/bootstrap.css" rel="stylesheet">
@@ -81,9 +81,9 @@
                                 <div class="row">
                                     <div class="col-md-12">
                                         <div class="form-group">
-                                            <label>Desripton:</label>
+                                            <label>Description:</label>
                                             <textarea class="form-control" name="fish_desc"></textarea>
-                                            <small id="emailHelp" class="form-text text-muted">Please insert fish common name.</small>
+                                            <small id="emailHelp" class="form-text text-muted">Please insert description of fish.</small>
                                             <script>
                                                 CKEDITOR.replace('fish_desc');
                                             </script>
@@ -100,7 +100,7 @@
                                                 <option value="RD003">RD003</option>
                                                 <option value="RD004">RD004</option>
                                             </select>
-                                            <small id="emailHelp" class="form-text text-muted">Please insert your name.</small>
+                                            <small id="emailHelp" class="form-text text-muted">Please insert order ID.</small>
                                         </div>
                                     </div>
                                     <div class="col-md-6">
@@ -112,7 +112,7 @@
                                                 <option value="Beloniformes">Beloniformes</option>
                                                 <option value="Clupeiformes">Clupeiformes</option>
                                             </select>
-                                            <small id="emailHelp" class="form-text text-muted">Please insert your name.</small>
+                                            <small id="emailHelp" class="form-text text-muted">Please insert order name.</small>
                                         </div>
                                     </div>
                                 </div>
@@ -126,7 +126,7 @@
                                                 <option value="FM003">FM003</option>
                                                 <option value="FM004">FM004</option>
                                             </select>
-                                            <small id="emailHelp" class="form-text text-muted">Please insert your name.</small>
+                                            <small id="emailHelp" class="form-text text-muted">Please insert family ID.</small>
                                         </div>
                                     </div>
                                     <div class="col-md-6">
@@ -138,7 +138,7 @@
                                                 <option value="Belonidae">Belonidae</option>
                                                 <option value="Clupeidae">Clupeidae</option>
                                             </select>
-                                            <small id="emailHelp" class="form-text text-muted">Please insert your name.</small>
+                                            <small id="emailHelp" class="form-text text-muted">Please insert family name.</small>
                                         </div>
                                     </div>
                                 </div>
@@ -151,7 +151,7 @@
                                                 <option value="MN-9872">MN-9872</option>
                                                 <option value="FS-0654">FS-0654</option>
                                             </select>
-                                            <small id="emailHelp" class="form-text text-muted">Please insert your name.</small>
+                                            <small id="emailHelp" class="form-text text-muted">Please insert category ID.</small>
                                         </div>
                                     </div>
                                     <div class="col-md-6">
@@ -162,7 +162,7 @@
                                                 <option value="Marine">Marine</option>
                                                 <option value="Freshwater">Freshwater</option>
                                             </select>
-                                            <small id="emailHelp" class="form-text text-muted">Please insert your name.</small>
+                                            <small id="emailHelp" class="form-text text-muted">Please insert category name.</small>
                                         </div>
                                     </div>
                                 </div>
@@ -178,16 +178,16 @@
                                 <div class="row">
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <label>Longlitute</label>
+                                            <label>Latitude:</label>
                                             <input type="text" id="lat" name="fish_lat" size="50" placeholder="latititure" class="form-control">
-                                            <small id="emailHelp" class="form-text text-muted">Please insert your name.</small>
+                                            <small id="emailHelp" class="form-text text-muted">Please insert latitude.</small>
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <label>Longtiture:</label>
-                                            <input type="text" id="long" name="fish_long" size="50" placeholder="latititure" class="form-control">
-                                            <small id="emailHelp" class="form-text text-muted">Please insert your name.</small>
+                                            <label>Longitude:</label>
+                                            <input type="text" id="long" name="fish_long" size="50" placeholder="longitude" class="form-control">
+                                            <small id="emailHelp" class="form-text text-muted">Please insert longitude.</small>
                                         </div>
                                     </div>
                                 </div>
@@ -195,8 +195,8 @@
                                     <div class="col-md-6">
                                         <div class="form-group">
                                             <label>Location:</label>
-                                            <input type="text" class="form-control" name="fish_location"  placeholder="Fish common name">
-                                            <small id="emailHelp" class="form-text text-muted">Please insert fish common name.</small>
+                                            <input type="text" class="form-control" name="fish_location"  placeholder="fish location">
+                                            <small id="emailHelp" class="form-text text-muted">Please insert location of fish.</small>
                                         </div>
                                     </div>
                                 </div>
@@ -204,11 +204,13 @@
                                     <div class="col-md-6">
                                         <div class="form-group">
                                             <label>Images</label>
-                                            <input type="file" class="form-control" name="fish_pic"  placeholder="Fish common name">
-                                            <small id="emailHelp" class="form-text text-muted">Please insert fish common name.</small>
+                                            <input type="file" class="form-control" name="fish_pic"  placeholder="Fish image">
+                                            <small id="emailHelp" class="form-text text-muted">Please insert fish image.</small>
                                         </div>
                                     </div>
                                 </div>
+                                
+                                <%-- 
                                 <div class="row">
                                     <div class="col-md-12">
                                         <div class="form-group">
@@ -223,6 +225,8 @@
                                         </div>
                                     </div>
                                 </div>
+                                --%>
+                               
                                 <div class="row">
                                     <div class="col-md-1">
                                         <button type="submit" name="submit" class="btn btn-success">Save</button>

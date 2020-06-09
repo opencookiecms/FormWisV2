@@ -17,7 +17,7 @@
         <link rel="icon" href="../../favicon.ico">
         <link rel="canonical" href="https://getbootstrap.com/docs/3.4/examples/navbar/">
 
-        <title>Navbar Template for Bootstrap</title>
+        <title>Fish List</title>
 
         <!-- Bootstrap core CSS -->
         <link href="http://localhost/css/bootstrap.css" rel="stylesheet">
@@ -41,7 +41,7 @@
                 <li class="breadcrumb-item"><a href="#">Fish</a></li>
                 <li class="breadcrumb-item active">Fish List</li>
             </ol>
-            <a href="/FormWisV2/AddFish" class="btn btn-primary">Add new fish</a>
+            <a href="/FormWisV2/AddFish.jsp" class="btn btn-primary">Add new fish</a>
             <div class="row">
                 <div class="col-md-12 p-3">
 
@@ -49,7 +49,7 @@
                         <thead>
                             <tr>
                                 <th>Fish Id</th>
-                                <th>Specis Name</th>
+                                <th>Species Name</th>
                               
                                 <th>Family ID</th>
                       

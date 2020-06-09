@@ -37,7 +37,7 @@
         <div class="container">
           <jsp:include page="/menu.jsp"/>
             <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="#">Fish</a></li>
+                <li class="breadcrumb-item"><a href="homepage.jsp">Back</a></li>
                 <li class="breadcrumb-item active">Fish List</li>
             </ol>
 
@@ -75,7 +75,7 @@
 
                                 <th>Email</th>
                                 <th>Phone No</th>
-                                <th>Action</th>
+                                
                             </tr>
                         </thead>
                         <tbody>
@@ -85,7 +85,7 @@
                                     <td>${s.institute}</td>
                                     <td>${s.phoneNo}</td>
                                     <td>${s.email}</td>
-                                    <td>Action</td>
+                                    
 
                                 </tr>
                             </pi:forEach>

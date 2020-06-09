@@ -74,7 +74,7 @@ public class AddFishFish extends HttpServlet {
             Part filePart = request.getPart("fish_pic");
             
             String photo="";
-            String path="C:\\xampp\\htdocs\\img";
+            String path="C:\\xampp7.4\\htdocs\\assets\\img";
             
             File file=new File(path);
             file.mkdir();

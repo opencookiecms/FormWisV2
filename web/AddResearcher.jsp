@@ -149,7 +149,7 @@
                                     <button type="reset" name="reset" class="btn btn-danger">Reset</button>
                                 </div>
                                 <div class="col-md-10">
-                                    <span>Already registered!!</span> <a href="index.html">Login Here</a>
+                                    <span>Already registered!!</span> <a href="index.jsp">Login Here</a>
                                 </div>
                             </div>
                         </div>

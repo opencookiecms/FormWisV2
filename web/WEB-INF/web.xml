@@ -40,6 +40,14 @@
         <servlet-name>FishVbyAR</servlet-name>
         <servlet-class>Servlet.FishVbyAR</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>PUHomepage</servlet-name>
+        <servlet-class>Servlet.PUHomepage</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>EditProject2</servlet-name>
+        <servlet-class>Servlet.EditProject2</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>DeleteProject</servlet-name>
         <url-pattern>/project_delete</url-pattern>
@@ -79,6 +87,14 @@
     <servlet-mapping>
         <servlet-name>FishVbyAR</servlet-name>
         <url-pattern>/fish_id</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>PUHomepage</servlet-name>
+        <url-pattern>/PUHomepage</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>EditProject2</servlet-name>
+        <url-pattern>/EditProject2</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

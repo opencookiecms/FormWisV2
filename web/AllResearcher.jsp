@@ -1,8 +1,5 @@
-<%-- 
-    Document   : AllResearcher
-    Created on : May 22, 2020, 11:59:26 PM
-    Author     : anaqi
---%>
+
+
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@taglib prefix="rl" uri="http://java.sun.com/jsp/jstl/core" %>
@@ -36,7 +33,7 @@
     <body>
 
         <div class="container">
-             <jsp:include page="/menu.jsp"/>
+            <jsp:include page="/menu.jsp"/>
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="#">Fish</a></li>
                 <li class="breadcrumb-item active">Fish List</li>
@@ -47,32 +44,38 @@
                     <table id="myTable" class="display " style="width:100%">
                         <thead>
                             <tr>
-                                 <th>R.Id</th>
-                <th>Name</th>
-                <th>Institute</th>
-                <th>Field</th>
-                <th>Email</th>
-                <th>Phone No</th>
-                <th>Username</th>
-                <th>Action</th>
+                                <th>R.Id</th>
+                                <th>Name</th>
+                                <th>Institute</th>
+                                <th>Field</th>
+                                <th>Email</th>
+                                <th>Phone No</th>
+                                <th>Username</th>
+                                <%-- 
+                                <th>Action</th>
+                               --%>
+                                
                             </tr>
                         </thead>
                         <tbody>
-                        <rl:forEach items="${AllResearcher}" var="f">
-            <tr>
-               <td>${f.ID}</td>
-               <td>${f.name}</td>
-               <td>${f.institute}</td>
-               <td>${f.field}</td>
-              <td>${f.email}</td>
-              <td>${f.phoneNo}</td>
-              <td>${f.username}</td>
-               <td>
-                   <a href="researcher_view?ID=${f.ID}">Edit</a>
-                   <a href="researcher_delete?ID=${f.ID}">Delete</a>
-               </td>
-            </tr>
-            </rl:forEach>
+                            <rl:forEach items="${AllResearcher}" var="f">
+                                <tr>
+                                    <td>${f.ID}</td>
+                                    <td>${f.name}</td>
+                                    <td>${f.institute}</td>
+                                    <td>${f.field}</td>
+                                    <td>${f.email}</td>
+                                    <td>${f.phoneNo}</td>
+                                    <td>${f.username}</td>
+                                
+                                <%-- 
+                                    <td>
+                                        <a href="researcher_view?ID=${f.ID}">Edit</a>
+                                        <a href="researcher_delete?ID=${f.ID}">Delete</a>
+                                    </td>
+                                --%>
+                                </tr>
+                            </rl:forEach>
                         </tbody>
                     </table>
                 </div>
@@ -92,9 +95,9 @@
         <script type="text/javascript" src="https://cdn.datatables.net/v/bs/dt-1.10.21/datatables.min.js"></script>
         <script>
             $(document).ready(function () {
-                $('#myTable').dataTable( {
- 
-} );
+                $('#myTable').dataTable({
+
+                });
             });
         </script>
         <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->

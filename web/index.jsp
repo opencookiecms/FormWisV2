@@ -34,8 +34,8 @@
 
             <!-- Main component for a primary marketing message or call to action -->
             <div class="jumbotron bg-white">
-                <h1 class="display-3">FomWis</h1>
-                <p class="lead">Ikan ikan</p>
+                <h2 class="display-3">Fish Information System of Malaysia Water</h2>
+                <a href="/FormWisV2/homepage" class="btn btn-primary">HOME</a>
                 <hr class="my-4">
                 <p>Not yet become members, come and join us....</p>
                 <p class="lead">
@@ -55,14 +55,14 @@
                                         <div class="form-group">
                                             <label>Username</label>
                                             <input type="text" class="form-control" name="username" aria-describedby="emailHelp" placeholder="Enter Username">
-                                            <small id="emailHelp" class="form-text text-muted">please insert you username.</small>
+                                            <small id="emailHelp" class="form-text text-muted">Please insert you username.</small>
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <label>Passoword</label>
+                                            <label>Password</label>
                                             <input type="password" class="form-control" name="password" aria-describedby="emailHelp" placeholder="Enter Password">
-                                            <small id="emailHelp" class="form-text text-muted">enter your password.</small>
+                                            <small id="emailHelp" class="form-text text-muted">Please enter your password.</small>
                                         </div>
                                     </div>
                                

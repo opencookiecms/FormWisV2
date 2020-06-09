@@ -17,7 +17,7 @@
         <link rel="icon" href="../../favicon.ico">
         <link rel="canonical" href="https://getbootstrap.com/docs/3.4/examples/navbar/">
 
-        <title>dfdf</title>
+        <title>Project Update</title>
 
         <!-- Bootstrap core CSS -->
         <link href="http://localhost/css/bootstrap.css" rel="stylesheet">
@@ -41,14 +41,14 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="card border-primary mb-3">
-                        <div class="card-header">Please fill in you personal information</div>
+                        <div class="card-header">Please fill in the details of the project</div>
                         <div class="card-body">
                             <div class="row">
                                 <div class="col-md-12">
                                      <div class="form-group">
                                         <label>Project Name</label>
                                         <input type="text" value="${p.project_name}" class="form-control" name="project_name" aria-describedby="emailHelp" placeholder="Your Name">
-                                        <small id="emailHelp" class="form-text text-muted">Please insert your name.</small>
+                                        <small id="emailHelp" class="form-text text-muted">Please insert project name.</small>
                                     </div>
                                 </div>
                             </div>
@@ -57,7 +57,7 @@
                                      <div class="form-group">
                                         <label>Project Period</label>
                                         <input type="number" value="${p.project_period}" class="form-control" name="project_period">
-                                        <small id="emailHelp" class="form-text text-muted">Please insert your email address.</small>
+                                        <small id="emailHelp" class="form-text text-muted">Please insert day period.</small>
                                     </div>
                                 </div>
                             </div>
@@ -97,14 +97,12 @@
                             
                             <div class="row">
                                 <div class="col-md-1">
-                                    <button type="submit" name="submit" class="btn btn-success">Register</button>
+                                    <button type="submit" name="submit" class="btn btn-success">Save</button>
                                 </div>
                                 <div class="col-md-1">
                                     <button type="reset" name="reset" class="btn btn-danger">Reset</button>
                                 </div>
-                                <div class="col-md-10">
-                                    <span>Already registered!!</span> <a href="index.html">Login Here</a>
-                                </div>
+                                
                             </div>
                         </div>
                     </div> 

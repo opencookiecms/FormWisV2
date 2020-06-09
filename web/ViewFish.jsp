@@ -18,7 +18,7 @@
         <link rel="icon" href="../../favicon.ico">
         <link rel="canonical" href="https://getbootstrap.com/docs/3.4/examples/navbar/">
 
-        <title>Navbar Template for Bootstrap</title>
+        <title>View Fish</title>
 
         <!-- Bootstrap core CSS -->
         <link href="http://localhost/css/bootstrap.css" rel="stylesheet">
@@ -43,85 +43,86 @@
     <body>
 
         <div class="container">
-          <jsp:include page="/menu.jsp"/>                          
-                                            
+            <jsp:include page="/menu.jsp"/>                          
+
             <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="#">Add</a></li>
+                <li class="breadcrumb-item"><a href="homepage.jsp">Back</a></li>
                 <li class="breadcrumb-item active">Fish</li>
             </ol>
-            
-               <div class="row">
 
-        <div class="col-sm-8 blog-main">
-             <vf:forEach items="${getFishbyID}" var="p">
-          <div class="blog-post">
-            <h2 class="blog-post-title">${p.scName}</h2>
-            <p class="blog-post-meta">${p.cmName}</p>
+            <div class="row">
 
-            <p><img src="http://localhost/assets/img/${p.fish_pic}" alt="fish" width="100%" height="400"></p>
-            <hr>
-            <p>${p.fish_desc}</p>
-            <p><h2>Others</h2></p>
-          <table class="table table-hover">
-              <thead>
-                  <tr>
-                           <th scope="col">Type</th>
-      <th scope="col">Descriptions</th>
-                  </tr>
-              </thead>
-              <tbody>
-                    <tr>
-      <th scope="row">Order Name</th>
-      <td>${p.ordName}</td>
+                <div class="col-sm-8 blog-main">
+                    <vf:forEach items="${getFishbyID}" var="p">
+                        <div class="blog-post">
+                            <h2 class="blog-post-title">${p.scName}</h2>
+                            <p class="blog-post-meta">${p.cmName}</p>
 
-     
-    </tr>
-                      <tr>
-      <th scope="row">Family  Name</th>
-      <td>${p.fmlyName}</td>
-
-     
-    </tr>
-                      <tr>
-      <th scope="row">Categorie Name</th>
-      <td>${p.catName}</td>
-
-     
-    </tr>
-              </tbody>
-          
-              
-          </table>
-            <p><h2>Location</h2></p>
-          
-              <div style="height: 490px; position:relative; overflow:hidden">
-                                            <div id="map"></div>
-                                        </div>
-          <form>
-              <input type="hidden" id="lat" value="${p.fish_lat}" size="50" placeholder="latititure" class="form-control">
-              <input type="hidden" id="long" value="${p.fish_long}" size="50" placeholder="latit" class="form-control">
-          </form>
-          
-           
-          
-          </div><!-- /.blog-post -->
+                            <p><img src="http://localhost/assets/img/${p.fish_pic}" alt="fish" width="100%" height="400"></p>
+                            <hr>
+                            <p>${p.fish_desc}</p>
+                            <p><h2>Others</h2></p>
+                            <table class="table table-hover">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Type</th>
+                                        <th scope="col">Descriptions</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">Order Name</th>
+                                        <td>${p.ordName}</td>
 
 
-      
-        
-             </vf:forEach>
-        </div><!-- /.blog-main -->
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Family  Name</th>
+                                        <td>${p.fmlyName}</td>
 
-        <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
-          <div class="sidebar-module sidebar-module-inset">
-            <h4>About</h4>
-            <p>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
-          </div>
-  
-        </div><!-- /.blog-sidebar -->
 
-      </div><!-- /.row -->
-      
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Category Name</th>
+                                        <td>${p.catName}</td>
+
+
+                                    </tr>
+                                </tbody>
+
+
+                            </table>
+                            <p><h2>Location</h2></p>
+
+                            <div style="height: 490px; position:relative; overflow:hidden">
+                                <div id="map"></div>
+                            </div>
+                            <form>
+                                <input type="hidden" id="lat" value="${p.fish_lat}" size="50" placeholder="latitude" class="form-control">
+                                <input type="hidden" id="long" value="${p.fish_long}" size="50" placeholder="longitude" class="form-control">
+                            </form>
+
+
+
+                        </div><!-- /.blog-post -->
+
+
+
+
+                    </vf:forEach>
+                </div><!-- /.blog-main -->
+
+                <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
+                    <div class="sidebar-module sidebar-module-inset">
+                        <h4>About</h4>
+                        <p>Fishes of Malaysia Water Information System (FOMWIS) is the online database to provide an information about fish species. 
+                            All researchers around Malaysia can be connected through this online database.</p>
+                    </div>
+
+                </div><!-- /.blog-sidebar -->
+
+            </div><!-- /.row -->
+
 
 
         </div> <!-- /container -->
@@ -137,7 +138,7 @@
         <script>
 // Initialize and add the map
             function initMap() {
-                
+
                 var getLat = document.getElementById("lat").value;
                 var getLong = document.getElementById("long").value;
                 var latlng = new google.maps.LatLng(getLat, getLong);

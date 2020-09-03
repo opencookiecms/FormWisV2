@@ -281,7 +281,7 @@
                 );
             }
         </script>
-        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBZqmOsvliGb1y1mUgkHjLiThl5yYRodsE&callback=initMap" async defer></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=GOOGLE API KEY HERE&callback=initMap" async defer></script>
 
     </body>
 </html>
